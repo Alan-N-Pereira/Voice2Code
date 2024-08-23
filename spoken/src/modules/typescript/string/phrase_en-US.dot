@@ -1,0 +1,30 @@
+digraph String {
+    id="string";
+    label="Writes a string";
+    lang="en-US";
+    langName="English";
+    pad="0.2";
+    rankdir=LR;
+    disableStopWords="true";
+    priority="2";
+    node[shape=doublecircle]; 4;
+    node[shape=circle];
+
+    0 -> 2 [label="(string, text)"];
+    2 -> 2 [label="({any})", store=string];
+    2 -> 4 [label="(string, text)"];
+
+    title="Writes a string";
+    desc="Writes a string in the editor";
+
+    examples="
+      string hello world string,
+      string null pointer exeception is bad string,
+      text this can be any piece of writing text,
+      string hello my name is giovani girogio string,
+      text what is happening peter text,
+      text H E L L O text,
+      string O N U string,
+      string U S A string
+    ";
+}

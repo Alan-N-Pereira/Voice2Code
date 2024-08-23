@@ -1,0 +1,25 @@
+digraph GoToLine {
+    id="go_to_line";
+    label="Change line";
+    lang="en-US";
+    langName="English";
+    pad="0.2";
+    rankdir=LR;
+    node[shape=doublecircle]; 4;
+    node[shape=circle];
+
+    0 -> 1 [label="(go)"];
+    1 -> 2 [label="(to)"];
+    {2 1 0} -> 3 [label="(line)"];
+    3 -> 5 [label="(number)"];
+    {3 5} -> 4 [label="({number})", store=line];
+
+    title="Change line";
+    desc="Moves the cursor to a different line";
+    examples="
+        go to line [number],
+        go to line number [number],
+        line number [number],
+        line [number]
+    ";
+}

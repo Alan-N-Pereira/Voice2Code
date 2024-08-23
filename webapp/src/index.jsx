@@ -1,0 +1,41 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { parseRoute } from './pages/@components/utils';
+const App = React.lazy(() => import('./pages/app'));
+const WebApp = React.lazy(() => import('./pages/webapp'));
+const About = React.lazy(() => import('./pages/about'));
+const Home = React.lazy(() => import('./pages/home'));
+
+window.__HOME_PAGE__ = process.env.PUBLIC_URL;
+
+const OuterRouter = (props) => {
+    const { lang, route } = parseRoute();
+
+    let Page = null;
+
+    if (route === 'app') Page = App;
+    else if (route === 'webapp') Page = WebApp;
+    else if (route === 'about') Page = About;
+    else if (route === 'index') Page = Home;
+    else Page = lazy(NotFound);
+
+    return (
+        <React.Suspense fallback={<h1>Wait</h1>}>
+            <Page lang={lang} />
+        </React.Suspense>
+    );
+};
+
+const lazy = (comp) => React.lazy(() => Promise.resolve({ default: comp }));
+
+const NotFound = () => {
+    return <h3>Error 404 - Cannot get {window.location.pathname}</h3>;
+};
+
+
+ReactDOM.render(
+    <React.StrictMode>
+        <OuterRouter />
+    </React.StrictMode>,
+    document.getElementById('root')
+);

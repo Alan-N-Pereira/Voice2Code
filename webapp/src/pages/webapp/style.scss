@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.webapp {
+    display: flex;
+    & > div {
+        padding: 15px;
+    }
+    .tutorial {
+        flex: 0.25;
+    }
+    .code-editor {
+        flex: 0.6;
+    }
+    .speech2code {
+        flex: 0.15;
+        padding: 0px;
+    }
+
+    @media only screen and (max-width: 900px) {
+        display: block;
+        & > div {
+            padding: 10px 5px;
+        }
+    }
+}
+
+#modal .shade {
+    position: fixed;
+    background: #00000091;
+    display: none;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+#modal .shade.open {
+    display: block;
+}

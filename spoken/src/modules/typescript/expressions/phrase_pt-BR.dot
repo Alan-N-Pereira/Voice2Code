@@ -1,0 +1,31 @@
+digraph expressions {
+    id="expressions";
+    label="Escreve uma expressão";
+    lang="pt-BR";
+    langName="Português";
+    pad="0.2";
+    nodesep="1";
+    ranksep="2";
+    rankdir=LR;
+    alias="true";
+    node[shape=doublecircle]; 1 2 3;
+    node[shape=circle];
+
+    0 -> 1 [label="([number], [string], [variable_reference], [elementar_math_op], [function_call])", store=expression];
+    0 -> 2 [label="(gap)", store=wildCard, normalizer="identity"];
+    0 -> 3 [label="(falso, verdadeiro)", store=booleanConstants];
+
+    title="Escreve uma expressão";
+    desc="Escreve uma expressão no editor de texto, esse automata foi projetado para ser usado em outros automatas";
+
+    examples="
+      falso,
+      verdadeiro,
+      gap,
+      [number],
+      [string],
+      [variable_reference],
+      [elementar_math_op],
+      [function_call]
+    ";
+}

@@ -1,0 +1,50 @@
+digraph Select {
+    id="select";
+    label="Selecionar";
+    lang="pt-BR";
+    langName="Português";
+    pad="0.2";
+    rankdir=LR;
+    node[shape=doublecircle]; 3 17 10 20;
+    node[shape=circle];
+
+    0 -> 1 [label="(selecione, selecionar)"];
+    {1 18} -> 2 [label="(letra, símbolo)"];
+    2 -> 3 [label="({char})", store=word];
+    {1 18} -> 4 [label="(palavra)"];
+    4 -> 20 [label="([multi_word_token])", store=word, extraArgs="{\"case\": \"camel\"}"];
+    4 -> 3 [label="({term})", store=word];
+    1 -> 5 [label="(de, da)"];
+    1 -> 18 [label="({ordinalNumber})", normalizer="ordinalNumber", store=wordPosition];
+    5 -> 13 [label="(linha)", store=selectLine];
+    13 -> 19 [label="(número)"];
+    {13 19} -> 14 [label="({number})", store=from];
+    14 -> 15 [label="(até)"];
+    15 -> 16 [label="(linha, λ)"];
+    16 -> 17 [label="({number})", store=to];
+    5 -> 11 [label="({ordinalNumber})", normalizer="ordinalNumber", store=fromPosition];
+    {5 11} -> 6 [label="(letra, símbolo)"];
+    6 -> 7 [label="({char})", store=from];
+    7 -> 8 [label="(até)"];
+    {8 12} -> 9 [label="(letra, símbolo, λ)"];
+    8 -> 12 [label="({ordinalNumber})", normalizer="ordinalNumber", store=toPosition];
+    9 -> 10 [label="({char})", store=to];
+
+    title="Selecionar";
+    desc="Seleciona um pedaço de texto na linha atual";
+
+    examples="
+        selecione a letra B,
+        selecione a símbolo 5,
+        selecione a letra Q,
+        selecione a primeira letra B,
+        selecione a segunda letra K,
+        selecione a última palavra valor,
+        selecione a palavra lista,
+        selecione a palavra [multi_word_token],
+        selecione da linha 2 até a linha 15,
+        selecione da linha número 45 até a linha 90,
+        selecione da letra A até a letra Z,
+        selecione da segunda letra G até a última letra P
+    ";
+}

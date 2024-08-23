@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.js": "/static/js/main.36d21320.js",
+    "static/css/312.91847631.chunk.css": "/static/css/312.91847631.chunk.css",
+    "static/css/626.3db92161.chunk.css": "/static/css/626.3db92161.chunk.css",
+    "static/js/626.39c8f81b.chunk.js": "/static/js/626.39c8f81b.chunk.js",
+    "static/css/738.9f3d5e87.chunk.css": "/static/css/738.9f3d5e87.chunk.css",
+    "static/js/738.05cb107a.chunk.js": "/static/js/738.05cb107a.chunk.js",
+    "static/css/399.31344345.chunk.css": "/static/css/399.31344345.chunk.css",
+    "static/js/399.e5b8d6d6.chunk.js": "/static/js/399.e5b8d6d6.chunk.js",
+    "static/js/85.6ae3e025.chunk.js": "/static/js/85.6ae3e025.chunk.js",
+    "static/js/472.944bfc27.chunk.js": "/static/js/472.944bfc27.chunk.js",
+    "static/js/91.4002ca7c.chunk.js": "/static/js/91.4002ca7c.chunk.js",
+    "static/js/997.340a29f8.chunk.js": "/static/js/997.340a29f8.chunk.js",
+    "static/media/inner-workings-diagram-en-us.png": "/static/media/inner-workings-diagram-en-us.57d8b2709912eecbbea4.png",
+    "index.html": "/index.html",
+    "main.36d21320.js.map": "/static/js/main.36d21320.js.map",
+    "312.91847631.chunk.css.map": "/static/css/312.91847631.chunk.css.map",
+    "626.3db92161.chunk.css.map": "/static/css/626.3db92161.chunk.css.map",
+    "626.39c8f81b.chunk.js.map": "/static/js/626.39c8f81b.chunk.js.map",
+    "738.9f3d5e87.chunk.css.map": "/static/css/738.9f3d5e87.chunk.css.map",
+    "738.05cb107a.chunk.js.map": "/static/js/738.05cb107a.chunk.js.map",
+    "399.31344345.chunk.css.map": "/static/css/399.31344345.chunk.css.map",
+    "399.e5b8d6d6.chunk.js.map": "/static/js/399.e5b8d6d6.chunk.js.map",
+    "85.6ae3e025.chunk.js.map": "/static/js/85.6ae3e025.chunk.js.map",
+    "472.944bfc27.chunk.js.map": "/static/js/472.944bfc27.chunk.js.map",
+    "91.4002ca7c.chunk.js.map": "/static/js/91.4002ca7c.chunk.js.map",
+    "997.340a29f8.chunk.js.map": "/static/js/997.340a29f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.36d21320.js"
+  ]
+}

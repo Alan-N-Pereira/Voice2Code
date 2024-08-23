@@ -1,0 +1,52 @@
+{
+    "{any}": {
+        "value": "(.*)",
+        "examples": {
+            "pt-BR": ["quem é você", "isto é um teste"],
+            "en-US": ["who are you", "the universe is cracked"]
+        }
+    },
+    "{term}": {
+        "value": "^(?![\\* ]$).*",
+        "examples": {
+            "pt-BR": ["valor", "lista", "yellow", "dog", "andar", "a"],
+            "en-US": ["value", "graph", "number", "text", "temp", "a"]
+        }
+    },
+    "{ordinalNumber}": {
+        "value": "(\\S+)",
+        "examples": {
+            "pt-BR": ["1ª", "42ª", "último", "primeiro", "sétimo"],
+            "en-US": ["1ª", "42ª", "last", "first", "fourth"]
+        }
+    },
+    "{numeral}": {
+        "value": "(\\d+)",
+        "examples": {
+            "pt-BR": ["1", "42"],
+            "en-US": ["1", "42"]
+        }
+    },
+    "{number}": {
+        "value": "^(?![\\* ]$).*",
+        "examples": {
+            "pt-BR": ["1", "2", "three", "four", "five", "six", "42", "21", "19"],
+            "en-US": ["1", "2", "três", "quatro", "cinco", "seis", "42", "21", "19"]
+        },
+        "defaultNormalizer": "number"
+    },
+    "{char}": {
+        "value": "(.)",
+        "examples": {
+            "pt-BR": ["a", "B", "A", "z"],
+            "en-US": ["g", "K", "M"]
+        }
+    },
+    "@anything": {
+        "value": "",
+        "examples": {
+            "pt-BR": ["gap"],
+            "en-US": ["gap"]
+        }
+    }
+}

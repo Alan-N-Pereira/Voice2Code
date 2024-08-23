@@ -1,0 +1,17 @@
+{
+    "globals": {
+      "MyRecognizer": "readonly",
+      "webkitSpeechRecognition": "readonly",
+      "webkitSpeechGrammarList": "readonly"
+    },
+    "extends": [
+      "react-app",
+      "plugin:react-hooks/recommended"
+    ],
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "warn"
+    }
+}

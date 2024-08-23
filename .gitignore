@@ -1,0 +1,14 @@
+node_modules
+dist
+.vscode-test
+bin
+.env
+.env.prod
+.env.local
+.env.gh
+*.deploy
+server/public
+server/key.json
+server/key-gcloud.json
+server/key-azure.json
+spoken-vscode-driver/out

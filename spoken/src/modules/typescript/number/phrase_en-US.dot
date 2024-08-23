@@ -1,0 +1,31 @@
+digraph Number {
+    id="number";
+    label="Writes a number";
+    lang="en-US";
+    langName="English";
+    pad="0.2";
+    rankdir=LR;
+    priority="2";
+    node[shape=doublecircle]; 3;
+    node[shape=circle];
+
+    0 -> 2 [label="(number)"];
+    2 -> 3 [label="({number})", store=number];
+    0 -> 3 [label="({number})", store=number];
+
+    title="Writes a number";
+    desc="Writes a number in the editor";
+
+    examples="
+      number one,
+      number four,
+      number five,
+      number 43,
+      number 14,
+      number 140,
+      140,
+      123,
+      42,
+      18
+    ";
+}

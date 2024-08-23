@@ -1,0 +1,26 @@
+digraph Condition {
+    id="condition";
+    label="Condition Statement";
+    lang="en-US";
+    langName="English";
+    pad="0.2";
+    rankdir=LR;
+    node[shape=doublecircle]; 2 4 5;
+    node[shape=circle];
+
+    0 -> 1 [label="(conditional)"];
+    1 -> 2 [label="(statement)"];
+    2 -> 3 [label="(if)"];
+    3 -> 4 [label="(else)", store=otherwise, normalizer=boolean];
+    {2 3 4} -> 5 [label="([expressions])", store=condition];
+
+    title="Creates a if/else statement";
+    desc="Creates a if/else statement with the provided expression as condition";
+
+    examples="
+        conditional statement,
+        conditional statement [expressions],
+        conditional statement if [expressions],
+        conditional statement if else [expressions]
+    ";
+}

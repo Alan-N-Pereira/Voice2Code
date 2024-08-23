@@ -1,0 +1,50 @@
+{
+    "en-US": {
+        "words": [
+            "a -> P1 != (letter|symbol|word)",
+            "the",
+            "with",
+            "you",
+            "can",
+            "please",
+            "from -> S != (to)",
+            "to -> S != (from)",
+            "of",
+            "it",
+            "its",
+            "it's",
+            "is",
+            "are",
+            "was",
+            "were",
+            "in"
+        ],
+        "expressions": []
+    },
+    "pt-BR": {
+        "words": [
+            "a -> P1 != (letra|símbolo|palavra)",
+            "o -> P1 != (letra|símbolo|palavra)",
+            "ao",
+            "você",
+            "com",
+            "pode",
+            "na",
+            "do -> S != (até)",
+            "de -> S != (até)",
+            "da -> S != (até)",
+            "dos",
+            "das",
+            "as",
+            "os",
+            "para -> S != (todo)",
+            "é",
+            "era",
+            "estava",
+            "como",
+            "uma",
+            "vá"
+        ],
+        "expressions": ["por favor"]
+    }
+}

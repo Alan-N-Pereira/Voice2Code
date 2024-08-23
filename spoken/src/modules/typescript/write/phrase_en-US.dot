@@ -1,0 +1,34 @@
+digraph Write {
+    id="write";
+    label="Write text";
+    lang="en-US";
+    langName="English";
+    pad="0.2";
+    disableStopWords="true";
+    rankdir=LR;
+    node[shape=doublecircle]; 1 4 5 7 10;
+    node[shape=circle];
+
+    0 -> 1 [label="(print)"];
+    0 -> 2 [label="(write)"];
+    2 -> 1 [label="(down, λ)"];
+    2 -> 3 [label="(it)"];
+    3 -> 1 [label="(down, λ)"];
+    1 -> 4 [label="(space)", store=isSpace, normalizer=boolean];
+    1 -> 5 [label="({any})", store=text];
+    5 -> 5 [label="({any})", store=text];
+    1 -> 6 [label="(letter)", store=isDitaction, normalizer=boolean];
+    {6 9} -> 7 [label="({char})", store=text];
+    7 -> 8 [label="(and)"];
+    8 -> 9 [label="(letter)"];
+    1 -> 10 [label="(dot)", store=isDot, normalizer=boolean];
+
+    title="Write text";
+    desc="Write some text in the editor";
+    examples="
+        write hello how are you friend,
+        print my name is Giovani,
+        print it down how are you mate,
+        write letter B and letter E and letter T
+    ";
+}

@@ -1,0 +1,30 @@
+digraph string {
+    id="string";
+    label="Escreve uma string";
+    lang="pt-BR";
+    langName="Português";
+    pad="0.2";
+    rankdir=LR;
+    disableStopWords="true";
+    priority="2";
+    node[shape=doublecircle]; 4;
+    node[shape=circle];
+
+    0 -> 2 [label="(string, text)"];
+    2 -> 2 [label="({any})", store=string];
+    2 -> 4 [label="(string, text)"];
+
+    title="Escreve uma string";
+    desc="Escreve uma string no editor";
+
+    examples="
+      string olá mundo string,
+      string erros de ponteiro nulos são ruims string,
+      texto podemos dizer qualquer frase texto,
+      string Olá meu nome é Giovani Giorgio string,
+      texto e ele vai ligar pra todas até achar uma gata pra dar um passeio texto,
+      texto U S A texto,
+      texto B R T texto,
+      string G R A S S string
+    ";
+}

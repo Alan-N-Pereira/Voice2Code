@@ -1,0 +1,32 @@
+digraph multi_word_token {
+    id="multi_word_token";
+    label="Agrupa múltiplas palavras";
+    lang="pt-BR";
+    langName="Português";
+    pad="0.2";
+    rankdir=LR;
+    disableStopWords="true";
+    node[shape=doublecircle]; 4;
+    node[shape=circle];
+
+    0 -> 3 [label="(*)"];
+    3 -> 3 [label="({any})", store=words];
+    3 -> 4 [label="(*)"];
+
+    title="Agrupa múltiplas palavras";
+    desc="Agrupa múltiplas palavras juntas, projetado para ser usado dentro de outros automatas";
+
+    examples="
+      aspas carro azul aspas,
+      aspas nome composto de múltiplas palavras aspas,
+      aspas frase parseada aspas,
+      aspas transação crédito texto aspas,
+      aspas preço total aspas,
+      aspas preço por item aspas,
+      aspas W H O aspas,
+      aspas N U L L aspas,
+      aspas A B C D aspas,
+      aspas camel case aspas,
+      * hola me nombre es felipe *
+    ";
+}

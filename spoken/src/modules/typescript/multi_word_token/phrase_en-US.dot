@@ -1,0 +1,36 @@
+digraph multi_word_token {
+    id="multi_word_token";
+    label="Group multiple words together";
+    lang="en-US";
+    langName="English";
+    pad="0.2";
+    rankdir=LR;
+    disableStopWords="true";
+    node[shape=doublecircle]; 4;
+    node[shape=circle];
+
+    0 -> 3 [label="(*)"];
+    3 -> 3 [label="({any})", store=words];
+    3 -> 4 [label="(*)"];
+
+    title="Group multiple words together";
+    desc="Group multiple words together in one variable meant to be used as alias in other commands";
+
+    examples="
+      quote blue car quote,
+      quote multi word token quote,
+      quote to upper case quote,
+      quote to string quote,
+      quote to integer quote,
+      quote is null quote,
+      quote has next quote,
+      quote is full quote,
+      quote camel case quote,
+      quote get string could quote,
+      quote get color quote,
+      quote really good function quote,
+      quote U S A quote,
+      quote W H O quote,
+      quote F A T O S quote
+    ";
+}
