@@ -84,4 +84,4 @@ _Dont forget to edit `server/.env` with your azure speech-to-text API keys._
 
 Non code-like material produced in the creation of this project:
 
-1. [Undergratuate dissertation on this project](https://github.com/Alan-N-Pereira/Voice2Code/blob/main/230768637_ECS750P_Dissertation%20Research%20Paper.pdf).
+1. [Master dissertation on this project](https://github.com/Alan-N-Pereira/Voice2Code/blob/main/230768637_ECS750P_Dissertation%20Research%20Paper.pdf).
